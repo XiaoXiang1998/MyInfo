@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheldon Chang's Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #sidebar {
+            width: 100%;
+            max-width: 300px;
+            background-color: #e6d3bb;
+            padding: 20px;
+            color: #333;
+        }
+
+        #main-content {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            margin-left: auto;
+        }
+
+        ul {
+            padding-inline-start: 0;
+        }
+
+        h1,
+        h2 {
+            color: #4d4d4d;
+        }
+
+        h2 {
+            border-bottom: 2px solid #4d4d4d;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            color: #4d4d4d;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                align-items: flex-start;
+                /* justify-content: space-around; */
+            }
+
+            .main #sidebar {
+                order: 1;
+            }
+
+            #main-content {
+                order: 2;
+                margin-left: 20px;
+            }
+        }
+
+        .selfinfo {
+            margin: 10px;
+            text-align: center;
+            padding: 0px;
+        }
+
+        .skill {
+            display: flex;
+            align-items: center;
+        }
+
+        .skill span {
+            flex: 7;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .skill progress {
+            flex: 3;
+        }
+
+        /* 样式进度条 */
+        progress {
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: #f0f0f0;
+            /* 背景色 */
+            border: none;
+            height: 10px;
+            border-radius: 10px;
+        }
+
+        /* 自定义进度条的颜色 */
+        progress::-webkit-progress-bar {
+            background-color: #f0f0f0;
+            /* 背景色 */
+            border-radius: 10px;
+        }
+
+        progress::-webkit-progress-value {
+            background-color: #4CAF50;
+            /* 进度条颜色 */
+        }
+
+        /* 增加一些动画效果 */
+        progress::-webkit-progress-value {
+            transition: width 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        .project-list {
+            padding-left: 40px;
+        }
+
+        .sub-list {
+            padding-left: 20px;
+        }
+
+        .sub-list ur,
+        li {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="sidebar">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/3/2016/11/122240.jpg?quality=90&webp=true&resize=1000,667"
+                alt="Sheldon Chang's Photo" style="max-width: 100%; height: auto;">
+            <h1 class="selfinfo">Sheldon Chang</h1>
+            <h4 class="selfinfo">Assistant Manager</h4>
+            <h4 class="selfinfo">ebscream4me@gmail.com</h4>
+            <h2>Summary</h2>
+            <p>A dedicated and experienced professional with a
+                background in software engineering and management. Skilled in project management, team leadership, and
+                problem-solving.</p>
+            <h2>Skills</h2>
+            <ul>
+                <li class="skill">
+                    <span>Team Leadership</span>
+                    <progress max="100" value="80"></progress>
+                </li>
+                <li class="skill">
+                    <span>Software Architecture design</span>
+                    <progress max="100" value="75"></progress>
+                </li>
+                <li class="skill">
+                    <span>Frontend Development</span>
+                    <progress max="100" value="85"></progress>
+                </li>
+                <li class="skill">
+                    <span>Backend Development</span>
+                    <progress max="100" value="90"></progress>
+                </li>
+                <li class="skill">
+                    <span>Communication</span>
+                    <progress max="100" value="85"></progress>
+                </li>
+            </ul>
+
+            <h2>Tools & Platform</h2>
+            <ul>
+                <li class="skill">
+                    <span>Linux</span>
+                    <progress max="100" value="90"></progress>
+                </li>
+                <li class="skill">
+                    <span>Mircosfot Office</span>
+                    <progress max="100" value="75"></progress>
+                </li>
+                <li class="skill">
+                    <span>Git</span>
+                    <progress max="100" value="90"></progress>
+                </li>
+                <li class="skill">
+                    <span>Redmine</span>
+                    <progress max="100" value="90"></progress>
+                </li>
+
+                <li class="skill">
+                    <span>Gerrit</span>
+                    <progress max="100" value="90"></progress>
+                </li>
+            </ul>
+        </div>
+        <div id="main-content">
+            <div class="section">
+                <h2>Experience</h2>
+                <h3>Assistant Manager</h3>
+                <p>Jet optoelectronics, July 2021 - Present</p>
+                <ul class="project-list">
+                    <li>Lead a team of software engineers in developing and maintaining critical software systems.</li>
+                    <li>Manage project timelines, resources, and deliverables to ensure on-time completion.</li>
+                    <li>Collaborate with cross-functional teams to align software development efforts with business
+                        objectives.</li>
+                </ul>
+                <h3>Senior Software Engineer</h3>
+                <p>Jet optoelectronics, Nov 2017 - Jun 2021</p>
+                <ul class="project-list">
+                    <li>Rear Seat Entertainment - Android (Nougat):
+                        <ul class="sub-list">
+                            <li>Worked on CTS, Framework, Application issue tracking, and feature implementation.</li>
+                            <li>Developed the JET CAM application.</li>
+                            <li>Created the Android Home Launcher.</li>
+                        </ul>
+                    </li>
+
+                    <li>Rear Seat Entertainment - Linux (yocto):
+                        <ul class="sub-list">
+                            <li>Utilized Angular for OSD UI development.</li>
+                            <li>Implemented Node.js as a communicator for UI and system, utilizing websocket, unix
+                                socket, and restful API.</li>
+                            <li>Used shellscript for control system.</li>
+                        </ul>
+                    </li>
+
+                    <li>Rear Seat Entertainment Companion app - Android:
+                        <ul class="sub-list">
+                            <li>Contributed to the development of the Rear Seat Entertainment Companion app for Android.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Software Engineer</h3>
+                <p>AMI Nov 2013 - Oct 2017</p>
+                <ul class="project-list">
+                    <li>Meeting System
+                        <ul class="sub-list">
+                            <li>Restful API, Database Design.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Diagnostic App
+                        <ul class="sub-list">
+                            <li>Implement Android test tool application.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Android BSP (Kitkat)
+                        <ul class="sub-list">
+                            <li>Framework issue tracking and solving.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Education</h2>
+                <h3>Master's degree, Electronic Engineering</h3>
+                <p>National Quemoy University</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
