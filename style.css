@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sidebar {
+  width: 100%;
+  max-width: 300px;
+  background-color: #e6d3bb;
+  padding: 20px;
+  color: #333;
+}
+
+#main-content {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  margin-left: auto;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+h1,
+h2 {
+  color: #4d4d4d;
+}
+
+h2 {
+  border-bottom: 2px solid #4d4d4d;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h3 {
+  color: #4d4d4d;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+      flex-direction: row;
+      align-items: flex-start;
+      /* justify-content: space-around; */
+  }
+
+  .main #sidebar {
+      order: 1;
+  }
+
+  #main-content {
+      order: 2;
+      margin-left: 20px;
+  }
+}
+
+.selfinfo {
+  margin: 10px;
+  text-align: center;
+  padding: 0px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+}
+
+.skill span {
+  flex: 7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.skill progress {
+  flex: 3;
+}
+
+progress {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #f0f0f0;
+  border: none;
+  height: 10px;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #4CAF50;
+}
+
+progress::-webkit-progress-value {
+  transition: width 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.project-list {
+  padding-left: 40px;
+}
+
+.sub-list {
+  padding-left: 20px;
+}
+
+.sub-list ur,
+li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
