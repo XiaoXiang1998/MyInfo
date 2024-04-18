@@ -51,18 +51,18 @@ h2 {
 
 @media only screen and (min-width: 768px) {
   .container {
-      flex-direction: row;
-      align-items: flex-start;
-      /* justify-content: space-around; */
+    flex-direction: row;
+    align-items: flex-start;
+    /* justify-content: space-around; */
   }
 
   .main #sidebar {
-      order: 1;
+    order: 1;
   }
 
   #main-content {
-      order: 2;
-      margin-left: 20px;
+    order: 2;
+    margin-left: 20px;
   }
 }
 
@@ -123,4 +123,20 @@ progress::-webkit-progress-value {
 li {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.date {
+  color: gray;
+}
+
+.photo-container {
+  border-radius: 70%;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgb(251 112 4 / 30%);
+}
+
+.photo {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
