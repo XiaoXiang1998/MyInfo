@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sheldon Chang's Resume</title>
   <link rel="stylesheet" href="style.css">
+  <script src="main.js"> </script>
 </head>
 
 <body>
@@ -144,10 +145,31 @@
       </div>
       <div class="section">
         <h2>Professional certificates</h2>
-
+        <div class="certificate-container">
+          <div class="certificate-image-container">
+            <img src="certificates/Coursera_L5YUA3AU746S.png" onclick="enlargeImage(this)" alt="L5YUA3AU746S">
+          </div>
+          <div class="text-container">
+            <h2>Introduction to Cloud Computing</h2>
+            <p>IBM - <span class="date">Issued Apr 17, 2024</span></p>
+            <p class="date">Credential ID L5YUA3AU746S</p>
+          </div>
+        </div>
+        <div class="certificate-container">
+          <div class="certificate-image-container">
+            <img src="certificates/Coursera_HZCPEDWHKDR3.png" onclick="enlargeImage(this)" alt="HZCPEDWHKDR3">
+          </div>
+          <div class="text-container">
+            <h2>English for Career Development</h2>
+            <p>University of Pennsylvania - <span class="date">Issued Mar 27, 2024</span></p>
+            <p class="date">Credential ID HZCPEDWHKDR3</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+    <div id="modal" onclick="closeModal()">
+      <img id="modal-image" src="">
+    </div>
 </body>
 
 </html>
