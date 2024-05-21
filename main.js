@@ -1,5 +1,12 @@
 const certs = [
   {
+    "course": "Front-end Development with React",
+    "org": "IBM",
+    "date": "May 21, 2024",
+    "id": "T2B8WUNXD8WM",
+    "file": "Coursera_T2B8WUNXD8WM.png"
+  },
+  {
     "course": "Introduction to Web Development with HTML, CSS, JavaScript",
     "org": "IBM",
     "date": "Apr 26, 2024",
