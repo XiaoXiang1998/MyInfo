@@ -203,12 +203,12 @@ li {
 }
 
 @keyframes fade-out {
-  0 {
+  0% {
     opacity: 1;
     transform: scale3d(1, 1, 1);
   }
 
-  to {
+  100% {
     transform: scale3d(0, 0, 0);
     opacity: 0;
   }
