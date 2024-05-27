@@ -213,4 +213,21 @@ li {
     transform: scale3d(0, 0, 0);
     opacity: 0;
   }
+
+
+}
+
+ul.project-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.project-list li {
+  margin-bottom: 20px;
+}
+
+ul.project-list li p {
+  margin: 0;
+  text-align: justify;
+  line-height: 1.6;
 }
